@@ -17,7 +17,7 @@ const Header = () => {
 				</p>
 				<div className=" flex mt-4">
 					<a href="#" className="button1">
-						Hire Me fdfd
+						Hire Me
 					</a>
 					<a href="#" className="button2">
 						Let's Talk
