@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+*:focus {
+	outline: none;
+}
+
+body {
+	@apply bg-mainColor;
+}
+
+.navComponents {
+	position: relative;
+	display: inline-block;
+}
+
+.navComponents::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: currentColor;
+	transition: width 0.5s ease, left 0.5s ease;
+}
+
+.navComponents:hover::before {
+	width: 100%;
+	left: 0;
+}
+
+.navComponents:focus::before {
+	width: 100%;
+	left: 0;
+}
+
+.header {
+	@apply text-white;
+}
+
+.circle {
+	@apply w-3 h-3 rounded-full;
+}
+
+.mac-lines {
+	font-family: consolas;
+	@apply flex h-[20.5px];
+}
+
+.mac-lines span {
+	width: 30px;
+}
+
+.mac-lines span {
+	@apply text-macNumber;
+}
+
+.mac-links a {
+	@apply text-lightBlue hover:text-blue-500;
+}
+
+.projects-skills div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid rgb(89, 158, 89);
+	border-radius: 3px;
+	width: 70px;
+	height: 30px;
+}
+
+.button1 {
+	@apply border-2 w-[125px] pt-2 pb-2 mr-5 rounded-md bg-lightBlue text-mainColor font-semibold border-lightBlue hover:bg-mainColor hover:text-lightBlue transition ease-in-out focus:bg-mainColor focus:text-lightBlue cursor-pointer flex justify-center items-center;
+}
+
+.button2 {
+	@apply border-2 w-[125px] rounded-md border-lightBlue text-lightBlue font-semibold hover:bg-lightBlue hover:text-mainColor transition ease-in-out focus:bg-lightBlue focus:text-mainColor cursor-pointer flex justify-center items-center;
+}
+
+.contact-inputs input {
+	border: 3px solid;
+	@apply border-lightBlue rounded-md bg-shade w-72 h-12 flex pl-2;
+}
