@@ -3,6 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
+
 const Header = () => {
 	const [text] = useTypewriter({
 		words: ["Hi, I'm Rakhman Ismailov"],

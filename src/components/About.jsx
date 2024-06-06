@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { IoMdClose } from "react-icons/io";
 
 const About = () => {
 	const lines = [
@@ -61,10 +62,11 @@ const About = () => {
 		<div
 			id="about"
 			className="flex justify-center flex-col items-center bg-shade pt-5 pb-14">
-			<div className=""></div>
+			<h1 className="text-white text-4xl">About <span className="text-lightBlue">Me</span></h1>
 			<div className="bg-mainColor h-[450px] w-[800px] mt-8 rounded-md flex flex-col ">
 				<div className="bg-macGray rounded-t-md h-5 flex gap-2 items-center pl-3">
-					<div className="circle bg-red-500"></div>
+					<div className="circle bg-red-500" >
+					</div>
 					<div className="circle bg-yellow-500"></div>
 					<div className="circle bg-green-500"></div>
 				</div>
