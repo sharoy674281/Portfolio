@@ -5,16 +5,14 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Header = () => {
 	const [text] = useTypewriter({
-		words: ["Rakhman Ismailov", "Developer", "Engineer"],
-		loop: true,
-		typeSpeed: 50,
+		words: ["Hi, I'm Rakhman Ismailov"],
+		typeSpeed: 80,
 		deleteSpeed: 50,
-		delaySpeed: 1000,
 	});
 	return (
 		<div className=" header flex items-center justify-between h-96">
 			<div className=" w-[600px] ml-14">
-				<h1 className="text-5xl font-medium">Hi, I'm <span>{text}</span></h1>
+				<h1 className="text-5xl font-medium">{text}</h1>
 				<h2 className="text-3xl text-lightBlue font-medium mb-5">
 					Frontend developer
 				</h2>
