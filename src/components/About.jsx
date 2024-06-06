@@ -1,4 +1,5 @@
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const About = () => {
 	return (
@@ -6,9 +7,7 @@ const About = () => {
 			id="about"
 			className="flex justify-center flex-col items-center bg-shade pt-5 pb-14">
 			<div className="">
-				<h1 className="text-white text-4xl">
-					About <span className="text-lightBlue">Me</span>
-				</h1>
+
 			</div>
 			<div className="bg-mainColor h-[450px] w-[800px] mt-8 rounded-md flex flex-col ">
 				<div className="bg-macGray rounded-t-md h-5 flex gap-2 items-center pl-3">
@@ -23,7 +22,7 @@ const About = () => {
 					</div>
 					<div className="mac-lines">
 						<span>2</span>
-						<p className="text-macYellow">"Bergen, Norway"</p>
+						<p className="text-macYellow">Bergen, Norway</p>
 					</div>
 					<div className="mac-lines">
 						<span>3</span>

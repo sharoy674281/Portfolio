@@ -22,7 +22,7 @@ const ContactMe = () => {
 					required
 					name=""
 					id=""
-					className="resize-none w-full rounded-md border-[3px] border-lightBlue mt-2 h-64 pl-2 pt-2 mb-2 bg-shade"></textarea>
+					className="resize-none w-full rounded-md border-[2px] border-lightBlue mt-2 h-64 pl-2 pt-2 mb-2 bg-shade"></textarea>
 				<button type="submit" className="button1">
 					Submit
 				</button>

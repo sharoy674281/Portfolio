@@ -69,7 +69,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid rgb(89, 158, 89);
+	border: 2px solid rgb(89, 158, 89);
 	border-radius: 3px;
 	width: 70px;
 	height: 30px;
@@ -84,6 +84,6 @@ body {
 }
 
 .contact-inputs input {
-	border: 3px solid;
+	border: 2px solid;
 	@apply border-lightBlue rounded-md bg-shade w-72 h-12 flex pl-2;
 }

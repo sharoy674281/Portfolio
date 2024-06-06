@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOpenInNew } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
 
 const MyProjects = () => {
 	const projects = [
@@ -34,7 +35,7 @@ const MyProjects = () => {
 							<div className="flex mt-4">
 								<a
 									href={project.demoLink}
-									className="button1 flex justify-center items-center"
+									className="button1 flex justify-center items-center gap-1"
 									target="_blank"
 									rel="noopener noreferrer">
 									Live Demo
@@ -42,10 +43,11 @@ const MyProjects = () => {
 								</a>
 								<a
 									href={project.sourceLink}
-									className="button2"
+									className="button2 gap-1 flex justify-center items-center"
 									target="_blank"
 									rel="noopener noreferrer">
 									View Source
+									<FaGithub />
 								</a>
 							</div>
 						</div>
