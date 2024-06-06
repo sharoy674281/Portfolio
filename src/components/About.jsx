@@ -67,7 +67,7 @@ const About = () => {
 							"
 							<a
 								target="blank"
-								href="./pdf/Said-Rakhman_Ismailov - CV 2023.pdf">
+								href="/pdf/Said-Rakhman_Ismailov - CV 2023.pdf">
 								RakhmanCV.pdf
 							</a>
 							"

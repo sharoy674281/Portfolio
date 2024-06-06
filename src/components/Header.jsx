@@ -35,7 +35,7 @@ const Header = () => {
 			<div className="flex self-end">
 				<img
 					className="h-auto w-[400px]"
-					src="./images/Rakhman cropped.png"
+					src="/images/Rakhman cropped.png"
 					alt=""
 				/>
 			</div>
