@@ -67,7 +67,7 @@ const About = () => {
 			<h1 className="text-white text-4xl max-lg:text-2xl">
 				About <span className="text-lightBlue">Me</span>
 			</h1>
-			<div className=" w-[343px] bg-mainColor h-[450px] lg:w-[800px] mt-8 rounded-md flex flex-col ">
+			<div className=" w-[343px] bg-mainColor h-[500px] lg:w-[800px] mt-8 rounded-md flex flex-col ">
 				<div className="bg-macGray rounded-t-md h-5 flex gap-2 items-center pl-3">
 					<div className="circle bg-red-500 justify-center items-center flex group">
 						<IoMdClose className="size-3 hidden hover:block group-hover:block cursor-pointer" />

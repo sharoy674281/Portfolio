@@ -10,17 +10,17 @@ const MyProjects = () => {
 			description:
 				"Calculator i made by using HTML, CSS and vanilla Javascript.",
 			skills: ["HTML", "CSS", "Javscript"],
-			demoLink:
-				"https://github.com/sharoyirs/New-calculator-with-better-js-code",
-			sourceLink: "#",
+			demoLink: "#",
+			sourceLink:
+			"https://github.com/sharoyirs/New-calculator-with-better-js-code",
 		},
 		{
 			id: "2",
 			title: "Pokedex",
 			description: "Pokedex made by using PokeAPI",
 			skills: ["HTML", "CSS", "Javascript", "JSON"],
-			demoLink: "https://github.com/sharoyirs/Pokedex-with-PokeAPI",
-			sourceLink: "#",
+			demoLink: "#",
+			sourceLink: "https://github.com/sharoyirs/Pokedex-with-PokeAPI",
 		},
 		{
 			id: "3",
@@ -28,8 +28,8 @@ const MyProjects = () => {
 			description:
 				"My first portfolio, and first time hosting a website online.",
 			skills: ["HTML", "CSS", "React", "Tailwind"],
-			demoLink: "https://github.com/sharoyirs/Portfolio",
-			sourceLink: "https://rakhmanportfolio.netlify.app/",
+			demoLink: "https://rakhmanportfolio.netlify.app/",
+			sourceLink: "https://github.com/sharoyirs/Portfolio",
 		},
 	];
 	return (
@@ -41,9 +41,9 @@ const MyProjects = () => {
 				{projects.map((project) => (
 					<div
 						key={project.id}
-						className="w-[250px] flex lg:w-[800px] bg-shade rounded-md max-lg:pt-4 pb-4 mb-5">
+						className="w-[350px] flex lg:w-[800px] bg-shade rounded-md max-lg:pt-4 pb-4 mb-5">
 						<div className=" max-lg:w-full flex flex-col text-white lg:pt-5 lg:pl-5 max-lg:items-center">
-							<h1 className="lg:text-2xl max-lg:font-bold">
+							<h1 className="lg:text-2xl max-lg:font-bold text-xl">
 								{project.title}
 							</h1>
 							<p className="text-xs lg:text-sm mt-2 max-lg:pl-2">
