@@ -8,17 +8,17 @@ const MyProjects = () => {
 			id: "1",
 			title: "Calculator",
 			description:
-				"Calculator i made by using HTML, CSS and vanilla Javascript.",
-			skills: ["HTML", "CSS", "Javscript"],
+				"Calculator I made using HTML, CSS, and vanilla JavaScript.",
+			skills: ["HTML", "CSS", "JavaScript"],
 			demoLink: "#",
 			sourceLink:
-			"https://github.com/sharoyirs/New-calculator-with-better-js-code",
+				"https://github.com/sharoyirs/New-calculator-with-better-js-code",
 		},
 		{
 			id: "2",
 			title: "Pokedex",
-			description: "Pokedex made by using PokeAPI",
-			skills: ["HTML", "CSS", "Javascript", "JSON"],
+			description: "Pokedex made using PokeAPI.",
+			skills: ["HTML", "CSS", "JavaScript", "JSON"],
 			demoLink: "#",
 			sourceLink: "https://github.com/sharoyirs/Pokedex-with-PokeAPI",
 		},
@@ -26,12 +26,13 @@ const MyProjects = () => {
 			id: "3",
 			title: "Portfolio",
 			description:
-				"My first portfolio, and first time hosting a website online.",
+				"My first portfolio and first time hosting a website online.",
 			skills: ["HTML", "CSS", "React", "Tailwind"],
 			demoLink: "https://rakhmanportfolio.netlify.app/",
 			sourceLink: "https://github.com/sharoyirs/Portfolio",
 		},
 	];
+
 	return (
 		<div id="my-projects" className="flex flex-col items-center pt-5 pb-14">
 			<h1 className="text-2xl text-white lg:text-4xl">
@@ -42,11 +43,11 @@ const MyProjects = () => {
 					<div
 						key={project.id}
 						className="w-[350px] flex lg:w-[800px] bg-shade rounded-md max-lg:pt-4 pb-4 mb-5">
-						<div className=" max-lg:w-full flex flex-col text-white lg:pt-5 lg:pl-5 max-lg:items-center">
+						<div className="max-lg:w-full flex flex-col text-white lg:pt-5 lg:pl-5 max-lg:items-center">
 							<h1 className="lg:text-2xl max-lg:font-bold text-xl">
 								{project.title}
 							</h1>
-							<p className="text-xs lg:text-sm mt-2 max-lg:pl-2">
+							<p className="text-xs lg:text-sm mt-2 max-lg:pl-2 max-lg:text-center">
 								{project.description}
 							</p>
 							<div className="flex gap-1 lg:gap-2 projects-skills mt-3 max-lg:pr-2 max-lg:pl-2">

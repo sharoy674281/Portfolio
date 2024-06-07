@@ -35,7 +35,7 @@ const About = () => {
 		{ id: 13, text: "> Rakhman.education", className: "" },
 		{
 			id: 14,
-			text: `"Computer engineering, Western Norway University of Applied Sciences, Bergen"`,
+			text: `"Computer engineering, Western Norway University of Applied Sciences"`,
 			className: "text-macYellow",
 		},
 		{ id: 15, text: "", className: "" },
