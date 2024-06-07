@@ -11,6 +11,9 @@ export default {
 				macNumber: "#333333",
 				macYellow: "#E7D181",
 			},
+			screens: {
+				lg: "820px"
+			}
 		},
 	},
 	plugins: [],

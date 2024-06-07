@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { IoMdClose } from "react-icons/io";
+import { VscChromeMinimize } from "react-icons/vsc";
+import { BiExpandAlt } from "react-icons/bi";
 
 const About = () => {
 	const lines = [
@@ -53,7 +55,7 @@ const About = () => {
 		if (currentLine < lines.length) {
 			const timeout = setTimeout(() => {
 				setCurrentLine(currentLine + 1);
-			}, 1500); 
+			}, 1500);
 			return () => clearTimeout(timeout);
 		}
 	}, [currentLine, lines.length]);
@@ -62,15 +64,22 @@ const About = () => {
 		<div
 			id="about"
 			className="flex justify-center flex-col items-center bg-shade pt-5 pb-14">
-			<h1 className="text-white text-4xl">About <span className="text-lightBlue">Me</span></h1>
-			<div className="bg-mainColor h-[450px] w-[800px] mt-8 rounded-md flex flex-col ">
+			<h1 className="text-white text-4xl max-lg:text-2xl">
+				About <span className="text-lightBlue">Me</span>
+			</h1>
+			<div className=" w-[343px] bg-mainColor h-[450px] lg:w-[800px] mt-8 rounded-md flex flex-col ">
 				<div className="bg-macGray rounded-t-md h-5 flex gap-2 items-center pl-3">
-					<div className="circle bg-red-500" >
+					<div className="circle bg-red-500 justify-center items-center flex group">
+						<IoMdClose className="size-3 hidden hover:block group-hover:block cursor-pointer" />
 					</div>
-					<div className="circle bg-yellow-500"></div>
-					<div className="circle bg-green-500"></div>
+					<div className="circle bg-yellow-500 flex justify-center items-center relative group">
+						<VscChromeMinimize className="size-3 hidden group-hover:block cursor-pointer" />
+					</div>
+					<div className="circle bg-green-500 justify-center items-center flex group">
+						<BiExpandAlt className="size-2 hidden hover:block group-hover:block cursor-pointer" />
+					</div>
 				</div>
-				<div className="mt-3 ml-10 text-white">
+				<div className="ml-4 max-lg:mb-5 mt-3 lg:ml-10 text-white">
 					{lines.slice(0, currentLine).map((line) => (
 						<div key={line.id} className="mac-lines">
 							<span className="text-macNumber">{line.id}</span>

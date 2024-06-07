@@ -12,7 +12,7 @@ const ContactMe = () => {
 				action=""
 				method="get"
 				className="mt-8 flex flex-col items-center text-white">
-				<div className="grid grid-cols-2 gap-2 contact-inputs">
+				<div className="grid lg:grid-cols-2 gap-2 contact-inputs">
 					<input required type="text" placeholder="Full Name" />
 					<input required type="email" placeholder="Email Address" />
 					<input required type="number" placeholder="Mobile Number" />
@@ -23,7 +23,7 @@ const ContactMe = () => {
 					name=""
 					id=""
 					className="resize-none w-full rounded-md border-[2px] border-lightBlue mt-2 h-64 pl-2 pt-2 mb-2 bg-shade"></textarea>
-				<button type="submit" className="button1">
+				<button type="submit" className="button1 max-lg:mt-3 max-lg:h-10">
 					Submit
 				</button>
 			</form>

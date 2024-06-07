@@ -45,7 +45,7 @@ body {
 }
 
 .circle {
-	@apply w-3 h-3 rounded-full;
+	@apply w-3 h-3 rounded-full text-gray-700;
 }
 
 .mac-lines {
@@ -55,31 +55,59 @@ body {
 
 .mac-lines span {
 	width: 30px;
+	flex-shrink: 0;
 }
-
 .mac-links a {
 	@apply text-lightBlue hover:text-blue-500;
 }
 
 .projects-skills div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid rgb(89, 158, 89);
-	border-radius: 3px;
-	width: 70px;
-	height: 30px;
+	@apply flex justify-center items-center justify-center rounded lg:border-2 border-green-700 border-[1px] max-lg:text-xs pl-2 pr-2;
 }
 
 .button1 {
-	@apply border-2 w-[125px] pt-2 pb-2 mr-5 rounded-md bg-lightBlue text-mainColor font-semibold border-lightBlue hover:bg-mainColor hover:text-lightBlue transition ease-in-out focus:bg-mainColor focus:text-lightBlue cursor-pointer flex justify-center items-center;
+	@apply w-[100px] border-2 lg:w-[125px] lg:pt-2 lg:pb-2 rounded-md bg-lightBlue text-mainColor font-semibold border-lightBlue hover:bg-mainColor hover:text-lightBlue transition ease-in-out focus:bg-mainColor focus:text-lightBlue cursor-pointer flex justify-center items-center;
 }
 
 .button2 {
-	@apply border-2 w-[125px] rounded-md border-lightBlue text-lightBlue font-semibold hover:bg-lightBlue hover:text-mainColor transition ease-in-out focus:bg-lightBlue focus:text-mainColor cursor-pointer flex justify-center items-center;
+	@apply border-2 w-[100px] lg:w-[125px] rounded-md border-lightBlue text-lightBlue font-semibold hover:bg-lightBlue hover:text-mainColor transition ease-in-out focus:bg-lightBlue focus:text-mainColor cursor-pointer flex justify-center items-center;
 }
 
 .contact-inputs input {
 	border: 2px solid;
 	@apply border-lightBlue rounded-md bg-shade w-72 h-12 flex pl-2;
+}
+
+ .child-hide {
+        display: none;
+    }
+    .child-show:hover .child-hide {
+        display: flex;
+    }
+
+.hamburger-links li {
+	@apply w-full
+}
+
+
+.hamburger-links a{
+	position: relative;
+	display: inline-block;
+	@apply w-full flex justify-center
+}
+
+.hamburger-links a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background-color: currentColor;
+	transition: width 0.5s ease, left 0.5s ease;
+}
+
+.hamburger-links a:hover::before {
+	width: 100%;
+	left: 0;
 }
