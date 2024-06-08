@@ -35,7 +35,7 @@ const MyProjects = () => {
 
 	return (
 		<div id="my-projects" className="flex flex-col items-center pt-5 pb-14">
-			<h1 className="text-2xl text-white lg:text-4xl">
+			<h1 className="text-4xl text-white max-lg:text-3xl">
 				My <span className="text-lightBlue">Projects</span>
 			</h1>
 			<div className="mt-8">

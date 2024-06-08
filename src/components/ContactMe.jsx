@@ -5,7 +5,7 @@ const ContactMe = () => {
 		<div
 			id="contact-me"
 			className="flex flex-col items-center bg-shade pt-5 pb-14">
-			<h1 className="text-white text-4xl">
+			<h1 className="text-white text-4xl max-lg:text-3xl">
 				Contact <span className="text-lightBlue">Me</span>
 			</h1>
 			<form

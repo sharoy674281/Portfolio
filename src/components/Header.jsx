@@ -3,7 +3,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-
 const Header = () => {
 	const [main] = useTypewriter({
 		words: ["Hi, I'm Rakhman Ismailov"],
@@ -31,13 +30,14 @@ const Header = () => {
 					Frontend developer
 				</h2>
 				<p className="text-xs lg:text-base max-lg:w-[300px]">
-					Lorem ipsum dolor sit amet, consectetur jajaa adipisicing elit. Sunt
-					fugit corporis rerum deserunt vel iste totam nulla error quod
-					natus.
+					I'm a Computer engineering student and web developer based in Bergen, Norway. I design and build user interfaces
 				</p>
 				<div className=" flex mt-4 gap-3 lg:gap-3 max-lg:mt-6 max-lg:mb-10">
-					<a href="mailto:rakhmanirs@yahoo.no" className="button1">
-						Hire Me
+					<a
+						href="/pdf/Said-Rakhman_Ismailov - CV 2023.pdf"
+						target="blank"
+						className="button1">
+						CV
 					</a>
 					<a href="#contact-me" className="button2 max-lg:h-9">
 						Let's Talk

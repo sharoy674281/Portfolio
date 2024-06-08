@@ -64,7 +64,7 @@ const About = () => {
 		<div
 			id="about"
 			className="flex justify-center flex-col items-center bg-shade pt-5 pb-14">
-			<h1 className="text-white text-4xl max-lg:text-2xl">
+			<h1 className="text-white text-4xl max-lg:text-3xl">
 				About <span className="text-lightBlue">Me</span>
 			</h1>
 			<div className=" w-[343px] bg-mainColor h-[500px] lg:w-[800px] mt-8 rounded-md flex flex-col ">
