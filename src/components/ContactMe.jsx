@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { RiMessage2Fill } from "react-icons/ri";
 
 const ContactMe = () => {
 	const form = useRef();
@@ -67,8 +68,9 @@ const ContactMe = () => {
 			</form>
 
 			{messageVisible && (
-				<div className="confirmation-message slide-in text-white mt-4 text-xl confirmation-message">
+				<div className="confirmation-message slide-in text-white mt-4 text-xl confirmation-message fixed top-0 right-20 bg-green-900 pl-3 pr-3 pt-1 pb-1 rounded-md flex items-center gap-1">
 					Message sent!
+					<RiMessage2Fill />
 				</div>
 			)}
 		</div>
