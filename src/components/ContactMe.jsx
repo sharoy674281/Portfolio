@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
 	const form = useRef();
+	const [messageVisible, setMessageVisible] = useState(false);
 
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -13,12 +14,17 @@ const ContactMe = () => {
 			.then(
 				() => {
 					console.log("SUCCESS!");
+					setMessageVisible(true);
+					setTimeout(() => {
+						setMessageVisible(false);
+					}, 3000);
 				},
 				(error) => {
 					console.log("FAILED...", error.text);
 				}
 			);
 	};
+
 	return (
 		<div
 			id="contact-me"
@@ -42,7 +48,7 @@ const ContactMe = () => {
 						required
 						type="email"
 						placeholder="Email Address"
-						name="user_email"
+						name="from_email"
 					/>
 					<input required type="number" placeholder="Mobile Number" />
 					<input required type="text" placeholder="Email Subject" />
@@ -59,6 +65,12 @@ const ContactMe = () => {
 					Submit
 				</button>
 			</form>
+
+			{messageVisible && (
+				<div className="confirmation-message slide-in text-white mt-4 text-xl confirmation-message">
+					Message sent!
+				</div>
+			)}
 		</div>
 	);
 };

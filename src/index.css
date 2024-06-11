@@ -111,3 +111,20 @@ body {
 	width: 100%;
 	left: 0;
 }
+@keyframes slideIn {
+    from {
+ 	   transform: translateX(100%);
+ 	   opacity: 0;
+    }
+    to {
+ 	   transform: translateX(0);
+ 	   opacity: 1;
+    }
+}
+
+.confirmation-message {
+    opacity: 0; 
+    animation: slideIn 0.5s forwards;
+}
+
+
