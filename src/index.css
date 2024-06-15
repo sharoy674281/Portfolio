@@ -70,7 +70,7 @@ body {
 }
 
 .button2 {
-	@apply border-2 w-[100px] lg:w-[125px] rounded-md border-lightBlue text-lightBlue font-semibold hover:bg-lightBlue hover:text-mainColor transition ease-in-out focus:bg-lightBlue focus:text-mainColor cursor-pointer flex justify-center items-center;
+	@apply border-2 w-[100px] lg:w-[125px] rounded-md border-lightBlue text-lightBlue font-semibold hover:bg-lightBlue hover:text-mainColor transition ease-in-out focus:bg-lightBlue focus:text-mainColor cursor-pointer flex justify-center items-center lg:pt-2 lg:pb-2;
 }
 
 .contact-inputs input {

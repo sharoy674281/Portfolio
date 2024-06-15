@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -30,14 +29,15 @@ const Header = () => {
 					Frontend developer
 				</h2>
 				<p className="text-xs lg:text-base max-lg:w-[300px]">
-					I'm a Computer engineering student and web developer based in Bergen, Norway. I design and build user interfaces
+					I'm a Computer engineering student and web developer based in
+					Bergen, Norway. I design and build user interfaces
 				</p>
 				<div className=" flex mt-4 gap-3 lg:gap-3 max-lg:mt-6 max-lg:mb-10">
 					<a
-						href="/pdf/Said-Rakhman_Ismailov - CV 2023.pdf"
+						href="https://github.com/sharoyirs"
 						target="blank"
-						className="button1">
-						CV
+						className="button1 gap-1">
+						GitHub <FaGithub />
 					</a>
 					<a href="#contact-me" className="button2 max-lg:h-9">
 						Let's Talk
