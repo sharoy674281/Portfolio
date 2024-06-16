@@ -20,7 +20,7 @@ const About = () => {
 		{ id: 7, text: "> Rakhman.resume", className: "" },
 		{
 			id: 8,
-			text: `"<a target="blank" href="/pdf/Said-Rakhman_Ismailov - CV 2023.pdf" className="text-macYellow">RakhmanCV.pdf</a>"`,
+			text: `"<a target="blank" href="/pdf/CV - Rakhman Ismailov - 2024.pdf" className="text-macYellow">RakhmanCV.pdf</a>"`,
 			className: "text-macYellow mac-links",
 			isHTML: true,
 		},
