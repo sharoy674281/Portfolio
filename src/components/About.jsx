@@ -42,7 +42,7 @@ const About = () => {
 		{ id: 16, text: "> Rakhman.skills", className: "" },
 		{
 			id: 17,
-			text: `["Sass", "JavaScript", "Python", "React", "Node", "Express", "git"]`,
+			text: `["Sass", "JavaScript", "Python", "React", "Node", "Express", "git", "Wordpress"]`,
 			className: "text-macYellow",
 		},
 		{ id: 18, text: "", className: "" },

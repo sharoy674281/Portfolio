@@ -6,20 +6,16 @@ const MyProjects = () => {
 	const projects = [
 		{
 			id: "1",
-			title: "Calculator",
-			description:
-				"Calculator I made using HTML, CSS, and vanilla JavaScript.",
-			skills: ["HTML", "CSS", "JavaScript"],
-			demoLink: "#",
-			sourceLink:
-				"https://github.com/sharoyirs/New-calculator-with-better-js-code",
+			title: "Fision - Web Development, SEO, Chatbots",
+			description: "My web development agency made by using wordpress",
+			skills: ["Wordpress"],
+			demoLink: "https://www.fision.no/",
 		},
 		{
 			id: "2",
 			title: "Pokedex",
 			description: "Pokedex made using PokeAPI.",
 			skills: ["HTML", "CSS", "JavaScript", "JSON"],
-			demoLink: "#",
 			sourceLink: "https://github.com/sharoyirs/Pokedex-with-PokeAPI",
 		},
 		{
@@ -56,22 +52,26 @@ const MyProjects = () => {
 								))}
 							</div>
 							<div className="flex mt-4 gap-2">
-								<a
-									href={project.demoLink}
-									className="button1 flex justify-center items-center gap-1 max-lg:text-xs max-lg:h-7"
-									target="_blank"
-									rel="noopener noreferrer">
-									Live Demo
-									<MdOpenInNew />
-								</a>
-								<a
-									href={project.sourceLink}
-									className="button2 gap-1 flex justify-center items-center max-lg:text-xs max-lg:h-7"
-									target="_blank"
-									rel="noopener noreferrer">
-									View Source
-									<FaGithub />
-								</a>
+								{project.demoLink && (
+									<a
+										href={project.demoLink}
+										className="button1 flex justify-center items-center gap-1 max-lg:text-xs max-lg:h-7"
+										target="_blank"
+										rel="noopener noreferrer">
+										Live Demo
+										<MdOpenInNew />
+									</a>
+								)}
+								{project.sourceLink && (
+									<a
+										href={project.sourceLink}
+										className="button2 gap-1 flex justify-center items-center max-lg:text-xs max-lg:h-7"
+										target="_blank"
+										rel="noopener noreferrer">
+										View Source
+										<FaGithub />
+									</a>
+								)}
 							</div>
 						</div>
 					</div>
