@@ -1,6 +1,5 @@
-import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 
 const Header = () => {
 	const [main] = useTypewriter({
@@ -29,7 +28,7 @@ const Header = () => {
 					Frontend developer
 				</h2>
 				<p className="text-xs lg:text-base max-lg:w-[300px]">
-					I'm a Computer engineering student and web developer based in
+					I'm a Computer engineering student and a web developer based in
 					Bergen, Norway. I design and build user interfaces
 				</p>
 				<div className=" flex mt-4 gap-3 lg:gap-3 max-lg:mt-6 max-lg:mb-10">

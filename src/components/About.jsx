@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { IoMdClose } from "react-icons/io";
 import { VscChromeMinimize } from "react-icons/vsc";
@@ -42,7 +42,7 @@ const About = () => {
 		{ id: 16, text: "> Rakhman.skills", className: "" },
 		{
 			id: 17,
-			text: `["Sass", "JavaScript", "Python", "React", "Node", "Express", "git", "Wordpress"]`,
+			text: `["JavaScript", "Python", "React", "Node", "Express", "git", "Tailwind", "MongoDB", "Mongoose", "Typescript", "Wordpress" ]`,
 			className: "text-macYellow",
 		},
 		{ id: 18, text: "", className: "" },
@@ -55,7 +55,7 @@ const About = () => {
 		if (currentLine < lines.length) {
 			const timeout = setTimeout(() => {
 				setCurrentLine(currentLine + 1);
-			}, 1500);
+			}, 2000);
 			return () => clearTimeout(timeout);
 		}
 	}, [currentLine, lines.length]);
