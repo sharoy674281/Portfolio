@@ -39,7 +39,7 @@ const MyProjects = () => {
 						key={project.id}
 						className="w-[350px] flex lg:w-[800px] bg-shade rounded-md max-lg:pt-4 pb-4 mb-5">
 						<div className="max-lg:w-full flex flex-col text-white lg:pt-5 lg:pl-5 max-lg:items-center">
-							<h1 className="lg:text-2xl max-lg:font-bold text-xl">
+							<h1 className="lg:text-2xl max-lg:font-bold text-xl text-center lg:text-left">
 								{project.title}
 							</h1>
 							<p className="text-xs lg:text-sm mt-2 max-lg:pl-2 max-lg:text-center">
