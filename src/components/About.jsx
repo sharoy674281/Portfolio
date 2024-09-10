@@ -12,7 +12,7 @@ const About = () => {
 		{ id: 4, text: "> Rakhman.contactInfo", className: "" },
 		{
 			id: 5,
-			text: `[<a href="mailto:rakhmanirs@yahoo.no" class="text-macYellow">Rakhmanirs@yahoo.no</a>, <a target="_blank" href="https://www.linkedin.com/in/rakhman-ismailov" class="text-macYellow">LinkedIn</a>, <a target="_blank" href="https://github.com/sharoyirs" class="text-macYellow">Github</a>]`,
+			text: `[<a href="mailto:rakhmanirs@yahoo.no" class="text-macYellow">Rakhmanirs@yahoo.no</a>, <a target="_blank" href="https://www.linkedin.com/in/rakhman-ismailov" class="text-macYellow">LinkedIn</a>, <a target="_blank" href="https://github.com/sharoy674281" class="text-macYellow">Github</a>]`,
 			className: "text-macYellow mac-links",
 			isHTML: true,
 		},

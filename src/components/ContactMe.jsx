@@ -36,7 +36,7 @@ const ContactMe = () => {
 			<form
 				ref={form}
 				onSubmit={sendEmail}
-				action=""
+				action="POST"
 				className="mt-8 flex flex-col items-center text-white">
 				<div className="grid lg:grid-cols-2 gap-2 contact-inputs">
 					<input
