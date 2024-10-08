@@ -33,7 +33,7 @@ const Header = () => {
 				</p>
 				<div className=" flex mt-4 gap-3 lg:gap-3 max-lg:mt-6 max-lg:mb-10">
 					<a
-						href="https://github.com/sharoyirs"
+						href="https://github.com/sharoy674281"
 						target="blank"
 						className="button1 gap-1">
 						GitHub <FaGithub />
