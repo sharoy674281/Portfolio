@@ -5,10 +5,10 @@ const MyProjects = () => {
 	const projects = [
 		{
 			id: "1",
-			title: "Fision - Web Development, SEO, Chatbots",
-			description: "My web development agency made by using wordpress",
-			skills: ["Wordpress"],
-			demoLink: "https://www.fision.no/",
+			title: "HVLTopia, Sammen skaper vi en grønnere og smartere by",
+			description: "Website I coded for my school project",
+			skills: ["HTML, CSS"],
+			demoLink: "https://hvltopia.netlify.app/",
 		},
 		{
 			id: "2",
