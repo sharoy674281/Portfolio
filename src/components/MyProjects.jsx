@@ -7,7 +7,7 @@ const MyProjects = () => {
 			id: "1",
 			title: "HVLTopia, Sammen skaper vi en grønnere og smartere by",
 			description: "Website I coded for my school project",
-			skills: ["HTML, CSS"],
+			skills: ["HTML", "CSS"],
 			demoLink: "https://hvltopia.netlify.app/",
 		},
 		{
